@@ -563,7 +563,7 @@
             <div class="input-subscribe">
             <label for="input-email"></label>
 
-            <input class="mail-input" type="email" name="email" placeholder="E-mail" id="input-email"  />
+            <input class="mail-input" type="email" name="email" placeholder="E-mail" id="input-email" style="outline: transparent;"  />
              
             <button type="submit" class="btn-subscribe">
               Подписаться
@@ -584,6 +584,68 @@
             <use href="./images/icons.svg#icon-modal-x"></use>
           </svg>
         </button>
+
+        
+
+        <form name="modal_form" class="form-box">
+          <p class="modal-message">Оставьте свои данные, мы Вам перезвоним</p>
+          
+          <ul class="list">
+            <li class="form-list">
+              <label for="user-name" class="name-label" >Имя</label>
+              <input type="text" name="name" id="user-name" class="modal-input" style="outline: transparent;"  />
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-body"></use>
+              </svg>
+          </li>
+
+            <li class="form-list">
+              <label for="user-tel" class="tel-label" >Телефон</label>
+              <input type="tel" name="name" id="user-tel" class="modal-input" style="outline: transparent;" />
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+          </li>
+
+            <li class="form-list">
+              <label for="user-email" class="email-label" >Почта</label>
+              <input type="email" name="email" id="user-email" class="modal-input" style="outline: transparent;" />
+              <svg class="form-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+          </li>
+
+            <li class="form-list">
+              <label for="user-text" class="text-label" >Комментарий</label>
+              <textarea name="comment" id="user-text" placeholder="Введите текст"
+                       class="comment-input" cols="30"
+                  rows="10" style="outline: transparent;" >
+              </textarea>
+          </li>
+          </ul>
+
+          <div class="agree-box">
+                <label for="agree" class="agree-label">
+                  <input
+                    class="check-input"
+                    type="checkbox"
+                    name="agreement"
+                    value="ok"
+                    id="agree"
+                  />
+                  
+                  <span class="agree-text">Соглашаюсь с рассылкой и принимаю</span>
+                  <a
+                    class="agree link"
+                    href="#"
+                    target="_blank"
+                  >
+                    Условия договора
+                  </a>
+                </label>
+              </div>
+              <button type="submit" class="btn-agree">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
