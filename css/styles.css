@@ -705,6 +705,7 @@ img {
 
 .footer-community {
     margin-left: 70px;
+    margin-right: 93px;
 }
 
 .footer-social {
@@ -791,4 +792,70 @@ img {
     transform: translate(-50%, -50%);
 
     fill: #000;
+}
+
+/* Subscribe */
+
+.form-box {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.label-sub {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.btn-subscribe {
+    width: 200px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em; 
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--white);
+    margin-left: 12px;
+}
+
+.icon-subscribe {
+    fill: var(--white);
+    margin-left: 10px;
+}
+
+.input-subscribe {
+    width: 570px;
+    display: inline;
+}
+
+.mail-input {
+    background-color: transparent;
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.mail-input:not(:placeholder-shown) {
+    color: var(--white);
 }
