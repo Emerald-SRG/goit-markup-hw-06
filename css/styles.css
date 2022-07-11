@@ -784,14 +784,20 @@ img {
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     justify-content: center;
+    cursor: pointer;
 }
 .modal-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     fill: #000;
+}
+
+.button-modal:hover svg,
+.button-modal:focus svg {
+    fill: var(--accent);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-message {
